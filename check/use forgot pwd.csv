@@ -1,0 +1,2 @@
+id;full_name;email;country_code;mobile_number;password;is_email_verified;is_mobile_verified;is_active;is_locked;max_login_attempt;verification_token;user_type;login_time;created_at;updated_at;created_by;updated_by
+26;Muhdi;mudymudi17275@gmail.com;62;81510241569;$2y$10$5qYcg/IxhYdo.xWqhEbdu.w/ZeI7kKtrrvib.XI.U3kKli74PYW5K;0;0;0;0;NULL;NULL;1;NULL;2020-01-29 04:59:35;2020-01-29 04:59:35;NULL;NULL

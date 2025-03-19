@@ -1,0 +1,17 @@
+BRAND1308	Siomay Batagor Coy, Joglo
+BRAND1465	Bakso Urat Bang Muktar, Pejaten
+BRAND1622	Es Kelapa Rudin, Kalibata
+BRAND1042	Bakso Bakwan Retno, Kemanggisan 2
+BRAND1168	Bakso Bakwan Retno, Kebon Jeruk 2
+
+SELECT * FROM `mybrand-prod`.brands where code in ('BRAND1308','BRAND1465','BRAND1622','BRAND1042','BRAND1168','BRAND1590');
+SELECT * FROM `mybrand-prod`.users where id in ('42','168','308','465','622');
+SELECT * FROM `mybrand-prod`.brand_details where brand_id in ('25','134','263','414','541');
+SELECT * FROM `mybrand-prod`.brand_detail_logs where brand_detail_id in ('25','134','263','414','541');
+
+SELECT a.*,b.name,b.is_active,c.full_name,c.email FROM `mybrand-prod`.brand_detail_status a 
+LEFT JOIN `mybrand-prod`.brand_details b ON a.brand_detail_id=b.id
+LEFT JOIN `mybrand-prod`.users c ON b.created_by=c.id 
+where a.created_by in ('42','168','308','465','622');
+
+26
